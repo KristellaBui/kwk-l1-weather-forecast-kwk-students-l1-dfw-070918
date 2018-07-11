@@ -9,7 +9,7 @@ nyc_weather = {
 # 1. Complete the method below called location, that accepts a hash called weather as an argument so that it returns the value of city from the weather hash. 
 
 def location(weather)
-	puts weather[:city]
+	weather[:city]
 end
 
 location(nyc_weather)
@@ -17,7 +17,7 @@ location(nyc_weather)
 # 2. Using the location method as a guide, write a  method called "description" so it returns the description from the weather hash. 
 
 def description(weather)
-  puts weather[:description]
+  weather[:description]
 end
 
 description(nyc_weather)
@@ -25,7 +25,7 @@ description(nyc_weather)
 # 3. Using the methods above and string interpolation, update the method below so that it returns a string that describes the current weather - for example: "The weather in New York is Partly Cloudy. The temperature is 66.1 degrees Farenheit." HINT: the method should RETURN the string, not print it to the terminal. 
 
 def forecast(weather)
-  puts "The weather in #{weather[:city]} is #{weather[:description]}. The tempteracture is #{weather[:temperature_farenheit]} degrees Farenheit."
+  "The weather in #{weather[:city]} is #{weather[:description]}. The tempteracture is #{weather[:temperature_farenheit]} degrees Farenheit."
 end
 
 forecast(nyc_weather)
@@ -36,7 +36,7 @@ forecast(nyc_weather)
 
 def choppy_forecast(weather)
   weather.each do |key, value|
-    puts "The #{key} is #{value}."
+    "The #{key} is #{value}."
   end
 end
 
